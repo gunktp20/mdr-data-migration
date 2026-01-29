@@ -1,0 +1,38 @@
+# Data files (large CSV exports)
+*.csv
+old_system/*.csv
+
+# Backup files
+*.bak
+*.backup
+
+# Certificates and secrets
+*.pem
+*.key
+*.crt
+credentials.json
+.env
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Temp files
+*.tmp
+*.temp
+~$*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
