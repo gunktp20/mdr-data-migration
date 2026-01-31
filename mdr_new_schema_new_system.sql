@@ -363,6 +363,7 @@ CREATE TABLE spare (
 	created_at varchar(50) NULL,
 	updated_at varchar(50) NULL,
 	plant varchar(255) NULL,
+	mat_description_maktx text NULL,
 	CONSTRAINT spare_pkey PRIMARY KEY (id)
 );
 CREATE INDEX idx_spare_report_id ON public.spare USING btree (report_id);
@@ -536,6 +537,7 @@ CREATE TABLE transaction_items (
 	container text NULL,
 	created_at timestamptz NULL,
 	updated_at timestamptz NULL,
+	mat_description_maktx text NULL,
 	CONSTRAINT transaction_items_pkey PRIMARY KEY (id),
 	CONSTRAINT fk_transaction_groups_items FOREIGN KEY (group_id) REFERENCES transaction_groups(id) ON DELETE CASCADE ON UPDATE CASCADE
 );

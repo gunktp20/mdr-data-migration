@@ -36,3 +36,25 @@ desktop.ini
 # Logs
 *.log
 logs/
+
+# Claude Code config
+.claude/
+
+# Generated SQL migration files
+114_new_script/
+115_new_script/
+script/inventories/
+script/standalone/
+
+# Screenshots
+*.png
+
+# Old/temp scripts
+script 1/
+exmaple script/
+
+# Go build files
+*.exe
+*.dll
+*.so
+*.dylib
